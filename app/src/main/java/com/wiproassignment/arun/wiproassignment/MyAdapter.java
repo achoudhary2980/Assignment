@@ -39,7 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         @BindView(R.id.imageArrow)
         ImageView imageArrow;
-        
+
         @BindView(R.id.imageTitle)
         ImageView imageTitle;
 
@@ -58,7 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.row, parent, false);
+                .inflate(R.layout.row1, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -87,20 +87,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             }
             holder.imageArrow.setVisibility(View.VISIBLE);
             if (row.getImageHref() != null ) {
+                holder.imageTitle.setVisibility(View.VISIBLE);
                 System.out.println("Arun image url "+row.getImageHref());
-                Picasso.with(context).load(row.getImageHref()).fit().centerCrop()
-                        .fit().into(holder.imageTitle, new com.squareup.picasso.Callback() {
-                    @Override
-                    public void onSuccess() {
-                        holder.imageTitle.setVisibility(View.VISIBLE);
-                    }
-
-                    @Override
-                    public void onError() {
-                        holder.imageTitle.setVisibility(View.GONE);
-
-                    }
-                });
+                Picasso.with(context).load(row.getImageHref())
+                        .into(holder.imageTitle);
             } else {
                 holder.imageTitle.setVisibility(View.GONE);
 
