@@ -1,25 +1,22 @@
 package com.wiproassignment.arun.wiproassignment.view;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.HttpException;
 import com.wiproassignment.arun.wiproassignment.MyAdapter;
-
 import com.wiproassignment.arun.wiproassignment.R;
-import com.wiproassignment.arun.wiproassignment.network.ApiClient;
-import com.wiproassignment.arun.wiproassignment.network.ApiService;
-import com.wiproassignment.arun.wiproassignment.network.model.AllAboutCanada;
+import com.wiproassignment.arun.wiproassignment.ViewModel.FeedViewModel;
 import com.wiproassignment.arun.wiproassignment.network.model.Row;
 import com.wiproassignment.arun.wiproassignment.utils.MyDividerItemDecoration;
 import com.wiproassignment.arun.wiproassignment.utils.RecyclerTouchListener;
@@ -33,18 +30,12 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.observers.DisposableSingleObserver;
-import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private ApiService apiService;
-    private CompositeDisposable disposable = new CompositeDisposable();
-    private MyAdapter mAdapter;
-    private List<Row> rowlist = new ArrayList<>();
 
+    private MyAdapter mAdapter;
+    List<Row> rowList =new ArrayList<>();
     @BindView(R.id.coordinator_layout)
     CoordinatorLayout coordinatorLayout;
 
@@ -53,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.pullToRefresh)
     SwipeRefreshLayout pullToRefresh;
+    FeedViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,13 +52,15 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
+        FeedViewModel.Factory factory = new FeedViewModel.Factory();
+          viewModel = ViewModelProviders.of(this, factory)
+                .get(FeedViewModel.class);
 
 
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                fetchAllAboutCanada();
+                observeViewModel(viewModel);
 
             }
         });
@@ -75,9 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        apiService = ApiClient.getClient(getApplicationContext()).create(ApiService.class);
 
-        mAdapter = new MyAdapter(this, rowlist);
+        mAdapter = new MyAdapter(MainActivity.this, rowList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -101,42 +94,35 @@ public class MainActivity extends AppCompatActivity {
  }
         }));
 
-
-            fetchAllAboutCanada();
+        observeViewModel(viewModel);
 
     }
+
+    private void observeViewModel(final FeedViewModel viewModel) {
+        // Observe project data
+        viewModel.getObservableLatest().observe(this, new Observer<List<Row>>() {
+            @Override
+            public void onChanged(@Nullable List<Row> rowListFromServer) {
+
+                rowList.clear();
+               if(rowListFromServer!=null) {
+                   rowList.addAll(rowListFromServer);
+               }
+                mAdapter.notifyDataSetChanged();
+                pullToRefresh.setRefreshing(false);
+                toggleEmptyNotes();
+
+            }
+        });
+
+    }
+
 
     private void toggleEmptyNotes() {
 
     }
 
 
-    private void fetchAllAboutCanada() {
-        disposable.add(
-                apiService.fetchAllAboutcanada()
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread())
-
-                        .subscribeWith(new DisposableSingleObserver<AllAboutCanada>() {
-                            @Override
-                            public void onSuccess(AllAboutCanada notes) {
-                                System.out.println("Arun API success full");
-                                rowlist.clear();
-                                rowlist.addAll(notes.getRows());
-                                mAdapter.notifyDataSetChanged();
-                                pullToRefresh.setRefreshing(false);
-                                toggleEmptyNotes();
-                            }
-
-                            @Override
-                            public void onError(Throwable e) {
-                                System.out.println("Arun API failed");
-                                Log.e(TAG, "onError: " + e.getMessage());
-                                showError(e);
-                            }
-                        })
-        );
-    }
 
 
 
@@ -175,10 +161,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        disposable.dispose();
-    }
 }

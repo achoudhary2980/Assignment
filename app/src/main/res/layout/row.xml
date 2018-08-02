@@ -31,20 +31,17 @@
         <TextView
             android:layout_weight="1"
             android:id="@+id/textViewSubTitle"
-
             android:text="sdhfiowropriwfhwefnklegho2iru904ut904t7egdn fewhfew9fuwfhwefl"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/timestamp" />
         <ImageView
+            android:layout_weight="2"
             android:id="@+id/imageTitle"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textViewSubTitle"
             android:layout_width="wrap_content"
-            android:src="@drawable/ic_launcher_background"
             android:layout_height="wrap_content" />
 
 

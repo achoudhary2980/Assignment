@@ -2,9 +2,6 @@ package com.wiproassignment.arun.wiproassignment;
 
 
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,12 +12,8 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 import com.wiproassignment.arun.wiproassignment.network.model.Row;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
-import application.wiproassignment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -39,7 +32,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         @BindView(R.id.imageArrow)
         ImageView imageArrow;
-
+        
         @BindView(R.id.imageTitle)
         ImageView imageTitle;
 
