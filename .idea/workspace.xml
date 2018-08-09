@@ -9,74 +9,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="388808c6-d2d5-4c76-a464-95181fe0fa4e" name="Default" comment="Image load issue fix">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_rc01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_rc01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_rc01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_rc01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Test Results - ConverterUtilTest.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/ConverterUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/MyUtility.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/test/java/com/wiproassignment/arun/wiproassignment/ConverterUtilTest.java" />
+    <list default="true" id="388808c6-d2d5-4c76-a464-95181fe0fa4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_beta01_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_rc01_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_beta01.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_beta01.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_beta01.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_beta01_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_rc01_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_beta01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_rc01.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_beta01.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AssignmentRepository.iml" afterPath="$PROJECT_DIR$/AssignmentRepository.iml" />
-      <change beforePath="$PROJECT_DIR$/WiproAssignment.iml" afterPath="$PROJECT_DIR$/WiproAssignment.iml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/application/wiproassignment.java" afterPath="$PROJECT_DIR$/app/src/main/java/application/wiproassignment.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/ViewModel/FeedViewModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/ViewModel/FeedViewModel.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiClient.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiService.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/model/AllAboutCanada.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/model/AllAboutCanada.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/model/Row.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/model/Row.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/MyDividerItemDecoration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/MyDividerItemDecoration.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/RecyclerTouchListener.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/view/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/view/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row1.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/wiproassignment/arun/wiproassignment/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/wiproassignment/arun/wiproassignment/ExampleUnitTest.java" />
-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,26 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="58" lean-forward="false" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Const.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/API/Const.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiClient.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,6 +68,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="80" column="53" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="row1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row1.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AllAboutCanada.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/model/AllAboutCanada.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyUtility.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyUtility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/MyUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2239,8 +2185,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/network/ApiService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/row1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -2255,6 +2199,8 @@
         <option value="$PROJECT_DIR$/app/src/test/java/com/wiproassignment/arun/wiproassignment/ExampleUnitTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/wiproassignment/arun/wiproassignment/ConverterUtilTest.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/row1.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java" />
       </list>
     </option>
   </component>
@@ -2405,7 +2351,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.ConverterUtilTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="ConverterUtilTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -2615,9 +2561,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Android JUnit.ConverterUtilTest" />
-        <item index="1" class="java.lang.String" itemvalue="Android JUnit.ExampleUnitTest.testConvertFahrenheitToCelsius" />
-        <item index="2" class="java.lang.String" itemvalue="Android JUnit.ExampleUnitTest" />
+        <item index="0" class="java.lang.String" itemvalue="Android JUnit.ExampleUnitTest" />
+        <item index="1" class="java.lang.String" itemvalue="Android JUnit.ConverterUtilTest" />
+        <item index="2" class="java.lang.String" itemvalue="Android JUnit.ExampleUnitTest.testConvertFahrenheitToCelsius" />
       </list>
     </recent_temporary>
   </component>
@@ -2635,10 +2581,24 @@
       <option name="presentableId" value="Default" />
       <updated>1533221433559</updated>
     </task>
+    <task id="LOCAL-00001" summary="1) Title is wrong for the application, wrong parsing of Json data, lots of downloadible images aren't been shown in the app. : Title is updated from json data and some image urls are not loading even in web issue with these urls&#10;&#10;2) Rows are of equal size : Rows are now of different sizes depending on the data&#10;&#10;3) Contents are truncated :  truncation is removed now&#10;&#10;4) Some have default, some don't have images at all : some image urls are not loading even in web issue with these urls&#10;&#10;5) No need of &quot;&gt;&quot; after the image :  removed&#10;&#10;6) No error handling : Basic error handling is in place now &#10;&#10;7) No Unit Test written. : Local unit test cases written in ConverUtilTest.java (Here I ahve added a utility class for mock unit test case since this app does not have any business logic)&#10;&#10;8) Lots of un-necessary codes,empty methods (toggleEmptyNotes()) and unwanted explantions. :  Removed">
+      <created>1533796665516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533796665516</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="ConverterUtilTest - 2018.08.09 at 11h 47m 20s.xml">
+      <configuration name="ConverterUtilTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ConverterUtilTest - 2018.08.09 at 12h 08m 28s.xml">
+      <configuration name="ConverterUtilTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="ConverterUtilTest - 2018.08.09 at 12h 08m 50s.xml">
       <configuration name="ConverterUtilTest" configurationId="AndroidJUnit" />
     </history-entry>
     <history-entry file="ExampleUnitTest - 2018.08.09 at 11h 32m 28s.xml">
@@ -2656,13 +2616,15 @@
     <history-entry file="ExampleUnitTest - 2018.08.09 at 11h 44m 19s.xml">
       <configuration name="ExampleUnitTest" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="ExampleUnitTest - 2018.08.09 at 12h 09m 09s.xml">
+      <configuration name="ExampleUnitTest" configurationId="AndroidJUnit" />
+    </history-entry>
     <history-entry file="ExampleUnitTest_testConvertFahrenheitToCelsius - 2018.08.09 at 11h 45m 32s.xml">
       <configuration name="ExampleUnitTest.testConvertFahrenheitToCelsius" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="812" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2671,16 +2633,17 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24454428" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24495678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52737755" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17907573" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5550725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27471116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33861673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30038512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33861673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2693,7 +2656,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24454428" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2702,7 +2664,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Image load issue fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image load issue fix" />
+    <MESSAGE value="1) Title is wrong for the application, wrong parsing of Json data, lots of downloadible images aren't been shown in the app. : Title is updated from json data and some image urls are not loading even in web issue with these urls&#10;&#10;2) Rows are of equal size : Rows are now of different sizes depending on the data&#10;&#10;3) Contents are truncated :  truncation is removed now&#10;&#10;4) Some have default, some don't have images at all : some image urls are not loading even in web issue with these urls&#10;&#10;5) No need of &quot;&gt;&quot; after the image :  removed&#10;&#10;6) No error handling : Basic error handling is in place now &#10;&#10;7) No Unit Test written. : Local unit test cases written in ConverUtilTest.java (Here I ahve added a utility class for mock unit test case since this app does not have any business logic)&#10;&#10;8) Lots of un-necessary codes,empty methods (toggleEmptyNotes()) and unwanted explantions. :  Removed" />
+    <MESSAGE value="Image correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image correction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2811,7 +2775,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2893,7 +2857,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2987,20 +2951,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row1.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3025,6 +2980,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="144" lean-forward="false" selection-start-line="2" selection-start-column="144" selection-end-line="2" selection-end-column="144" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3032,6 +2988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6495">
           <caret line="433" column="39" lean-forward="false" selection-start-line="433" selection-start-column="39" selection-end-line="433" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3039,6 +2996,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3050,13 +3008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -3082,7 +3033,7 @@
         <state relative-caret-position="1005">
           <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3100,7 +3051,7 @@
         <state relative-caret-position="153">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3179,11 +3130,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/utils/MyUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row1.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wiproassignment/arun/wiproassignment/MyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="80" column="53" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

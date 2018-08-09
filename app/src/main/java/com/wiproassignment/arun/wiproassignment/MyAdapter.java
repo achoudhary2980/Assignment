@@ -40,7 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Row row = rowList.get(position);
-        if (row != null) {
+        if (row.getDescription()!=null || row.getTitle()!=null || row.getImageHref()!=null) {
             // Displaying dot from HTML character code
             if (row.getTitle() != null) {
                 holder.textViewTitle.setText(row.getTitle());
@@ -74,10 +74,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             }
                         });
 
-            } else {
-                holder.imageTitle.setVisibility(View.GONE);
-
             }
+        }
+        else {
+
+            holder.imageTitle.setVisibility(View.GONE);
         }
     }
 
