@@ -1,4 +1,3 @@
-
 package com.wiproassignment.arun.wiproassignment.network.model;
 
 import com.google.gson.annotations.Expose;
@@ -12,6 +11,9 @@ public class AllAboutCanada {
     @SerializedName("title")
     @Expose
     private String title;
+    @SerializedName("errorcode")
+    @Expose
+    private String errorcode;
     @SerializedName("rows")
     @Expose
     private List<Row> rows = null;
@@ -32,4 +34,11 @@ public class AllAboutCanada {
         this.rows = rows;
     }
 
+    public String getErrorcode() {
+        return errorcode;
+    }
+
+    public void setErrorcode(String errorcode) {
+        this.errorcode = errorcode;
+    }
 }

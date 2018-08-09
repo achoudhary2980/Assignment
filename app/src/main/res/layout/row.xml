@@ -2,65 +2,71 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:clickable="true"
     android:foreground="?attr/selectableItemBackground"
- android:padding="10dp">
-<LinearLayout
-    android:layout_width="0dp"
-    android:orientation="vertical"
-    android:layout_weight="7"
-    android:padding="10dp"
-    android:layout_height="wrap_content"
-    >
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/blue"
-        android:includeFontPadding="false"
-        android:lineSpacingExtra="0dp"
-        android:maxLines="2"
-        android:text="sdhfiowropriwfhwefnklegho2iru904ut904t7egdn fewhfew9fuwfhwefl"
-        android:textSize="@dimen/dot_text_size" />
+    android:orientation="horizontal"
+    android:padding="10dp">
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/textViewTitle">
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:padding="10dp">
+
         <TextView
-            android:layout_weight="1"
-            android:id="@+id/textViewSubTitle"
-            android:text="sdhfiowropriwfhwefnklegho2iru904ut904t7egdn fewhfew9fuwfhwefl"
+            android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/timestamp" />
-        <ImageView
-            android:layout_weight="2"
-            android:id="@+id/imageTitle"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/textViewSubTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:maxLines="2"
+            android:text="sdhfiowropriwfhwefnklegho2iru904ut904t7egdn fewhfew9fuwfhwefl"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dot_text_size" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textViewSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="sdhfiowropriwfhwefnklegho2iru904ut904t7egdn fewhfew9fuwfhwefl"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/timestamp" />
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textViewSubTitle"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
-<RelativeLayout
-    android:layout_width="0dp"
-    android:layout_weight="1"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/imageArrow"
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageArrow"
 
 
-        android:layout_width="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/ic_arrow_forward_ios"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_arrow_forward_ios" />
+    </RelativeLayout>
 
 
 </LinearLayout>

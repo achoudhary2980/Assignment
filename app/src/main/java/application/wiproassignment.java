@@ -25,29 +25,13 @@ import android.content.Context;
 import android.support.multidex.MultiDex;
 
 
-
-
 public class wiproassignment extends Application {
-
-    public static boolean isNotificationReceived = false;
-    static boolean executed = false;
     private static wiproassignment sframeworkapp;
-
-    private StackTraceElement stack = Thread.currentThread().getStackTrace()[2];
-   
-    private boolean mIsPINPadActivityOpened = false;
-    private OnAppInvisibleListener mOnAppInvisibleListeners;
- 
 
     public static wiproassignment getInstance() {
         return sframeworkapp;
     }
 
-
-
-    public static void setExecuted(boolean isexceuted) {
-        executed = isexceuted;
-    }
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -58,31 +42,8 @@ public class wiproassignment extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-//        ACRA.init(this);
-//        if (MyUtility.isDebugBuild()) {
-//
-//            ACRA.getErrorReporter().putCustomData("Build Type", "Debug");
-//
-//        } else {
-//            ACRA.getErrorReporter().putCustomData("Build Type", "Production");
-//        }
-
         sframeworkapp = this;
 
-    }
-
-
-
-
-   
-
-
-    public void setOnAppInvisibleListener(OnAppInvisibleListener listener) {
-        mOnAppInvisibleListeners = listener;
-    }
-
-    public interface OnAppInvisibleListener {
-        void onAppInvisible();
     }
 
 }

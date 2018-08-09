@@ -17,7 +17,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-
 public class ApiClient {
     private static Retrofit retrofit = null;
     private static int REQUEST_TIMEOUT = 60;
@@ -57,8 +56,6 @@ public class ApiClient {
                 Request.Builder requestBuilder = original.newBuilder()
                         .addHeader("Accept", "application/json")
                         .addHeader("Content-Type", "application/json");
-
-
 
 
                 Request request = requestBuilder.build();

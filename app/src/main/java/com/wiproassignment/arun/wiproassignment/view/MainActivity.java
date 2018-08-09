@@ -10,42 +10,45 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.jakewharton.retrofit2.adapter.rxjava2.HttpException;
 import com.wiproassignment.arun.wiproassignment.MyAdapter;
 import com.wiproassignment.arun.wiproassignment.R;
 import com.wiproassignment.arun.wiproassignment.ViewModel.FeedViewModel;
+import com.wiproassignment.arun.wiproassignment.network.model.AllAboutCanada;
 import com.wiproassignment.arun.wiproassignment.network.model.Row;
 import com.wiproassignment.arun.wiproassignment.utils.MyDividerItemDecoration;
-import com.wiproassignment.arun.wiproassignment.utils.RecyclerTouchListener;
+import com.wiproassignment.arun.wiproassignment.utils.MyUtility;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import application.wiproassignment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
-
-    private MyAdapter mAdapter;
-    List<Row> rowList =new ArrayList<>();
+    List<Row> rowList = new ArrayList<>();
     @BindView(R.id.coordinator_layout)
-    CoordinatorLayout coordinatorLayout;
-
+    RelativeLayout coordinatorLayout;
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
-
+    @BindView(R.id.rlayoutError)
+    RelativeLayout rlayoutError;
+    @BindView(R.id.textViewError)
+    TextView textViewError;
     @BindView(R.id.pullToRefresh)
     SwipeRefreshLayout pullToRefresh;
     FeedViewModel viewModel;
+    private MyAdapter mAdapter;
 
+    @BindView(R.id.my_toolbar)
+    Toolbar mTopToolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,21 +56,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         FeedViewModel.Factory factory = new FeedViewModel.Factory();
-          viewModel = ViewModelProviders.of(this, factory)
+        viewModel = ViewModelProviders.of(this, factory)
                 .get(FeedViewModel.class);
 
 
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                observeViewModel(viewModel);
+                if(MyUtility.isConnected()) {
+                    observeViewModel(viewModel);
+                }
+                else {
+                    Toast.makeText(wiproassignment.getInstance(),"No Connectivity try again later ...",Toast.LENGTH_LONG).show();
+                    pullToRefresh.setRefreshing(false);
+                }
 
             }
         });
-
-
-
-
 
 
         mAdapter = new MyAdapter(MainActivity.this, rowList);
@@ -77,86 +82,48 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new MyDividerItemDecoration(this, LinearLayoutManager.VERTICAL, 16));
         recyclerView.setAdapter(mAdapter);
 
-        /**
-         * On long press on RecyclerView item, open alert dialog
-         * with options to choose
-         * Edit and Delete
-         * */
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
-                recyclerView, new RecyclerTouchListener.ClickListener() {
-            @Override
-            public void onClick(View view, final int position) {
-            }
 
-            @Override
-            public void onLongClick(View view, int position) {
-//                showActionsDialog(position);
- }
-        }));
-
-        observeViewModel(viewModel);
-
+        if(MyUtility.isConnected()) {
+            observeViewModel(viewModel);
+            rlayoutError.setVisibility(View.GONE);
+        }
+        else {
+            rlayoutError.setVisibility(View.VISIBLE);
+            textViewError.setText("No Connectivity try again later ...");
+        }
+        setSupportActionBar(mTopToolbar);
     }
 
     private void observeViewModel(final FeedViewModel viewModel) {
         // Observe project data
-        viewModel.getObservableLatest().observe(this, new Observer<List<Row>>() {
+        viewModel.getObservableLatest().observe(this, new Observer<AllAboutCanada>() {
             @Override
-            public void onChanged(@Nullable List<Row> rowListFromServer) {
-
-                rowList.clear();
-               if(rowListFromServer!=null) {
-                   rowList.addAll(rowListFromServer);
-               }
-                mAdapter.notifyDataSetChanged();
-                pullToRefresh.setRefreshing(false);
-                toggleEmptyNotes();
+            public void onChanged(@Nullable AllAboutCanada rowListFromServer) {
+                if(rowListFromServer !=null && rowListFromServer.getErrorcode()!=null){
+                    if(rowListFromServer.getErrorcode().equalsIgnoreCase("Success")){
+                        rowList.clear();
+                        if (rowListFromServer != null) {
+                            rowList.addAll(rowListFromServer.getRows());
+                        }
+                        mTopToolbar.setTitle(rowListFromServer.getTitle());
+                        mAdapter.notifyDataSetChanged();
+                        pullToRefresh.setRefreshing(false);
+                        rlayoutError.setVisibility(View.GONE);
+                    }
+                    else {
+                        rlayoutError.setVisibility(View.VISIBLE);
+                        textViewError.setText("There is some error  ..."+rowListFromServer.getErrorcode());
+                        pullToRefresh.setRefreshing(false);
+                    }
+                }
+                else {
+                    rlayoutError.setVisibility(View.VISIBLE);
+                    textViewError.setText("There is some error  ...");
+                    pullToRefresh.setRefreshing(false);
+                }
 
             }
         });
-
-    }
-
-
-    private void toggleEmptyNotes() {
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    private void showError(Throwable e) {
-        String message = "";
-        try {
-            if (e instanceof IOException) {
-                message = "No internet connection!";
-            } else if (e instanceof HttpException) {
-                HttpException error = (HttpException) e;
-                String errorBody = error.response().errorBody().string();
-                JSONObject jObj = new JSONObject(errorBody);
-
-                message = jObj.getString("error");
-            }
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        } catch (JSONException e1) {
-            e1.printStackTrace();
-        } catch (Exception e1) {
-            e1.printStackTrace();
-        }
-
-        if (TextUtils.isEmpty(message)) {
-            message = "Unknown error occurred! Check LogCat.";
-        }
-
 
     }
 

@@ -1,4 +1,3 @@
-
 package com.wiproassignment.arun.wiproassignment.network.model;
 
 import com.google.gson.annotations.Expose;
