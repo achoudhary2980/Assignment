@@ -59,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             if (row.getImageHref() != null) {
                 holder.imageTitle.setVisibility(View.VISIBLE);
                 System.out.println("Arun image url " + row.getImageHref().toString().replace("http", "https"));
-                picasso.load(row.getImageHref().toString().replace("http", "https")).placeholder(R.drawable.ic_launcher_background)
+                picasso.load(row.getImageHref().toString().replace("http", "https")).placeholder(R.drawable.blankimg)
                         .into(holder.imageTitle, new Callback() {
                             @Override
                             public void onSuccess() {
@@ -69,7 +69,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             @Override
                             public void onError() {
 
-                                Picasso.with(context.getApplicationContext()).load(row.getImageHref().toString()).placeholder(R.drawable.ic_launcher_background)
+                                Picasso.with(context.getApplicationContext()).load(row.getImageHref().toString()).placeholder(R.drawable.blankimg)
                                         .into(holder.imageTitle);
                             }
                         });
